@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="src/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <title>Rocksys Media Player</title>
 </head>
 <body class="dark">
+    <label for="fileSelector" id="buttonSelectFile">
+        🎧 / 🎬
+    </label>
+
+    <input type="file" accept=".mp3, .mp4" id="fileSelector">
     
+    <audio id="audioPlayer" controlsList="nodownload" controls autoplay>
+        <source src="">
+    </audio>
+
+    <video id="videoPlayer" width="100%" height="25%" controlsList="nodownload" controls autoplay>
+        <source src="">
+    </video>
 </body>
 </html>

@@ -3,6 +3,26 @@
 
 body
     border-radius: 5px
-    background-color: variables.$lightbg
+    background-color: variables.$light
+
     &.dark
-        background-color: variables.$darkbg
+        background-color: variables.$dark
+        color: variables.$light
+    
+        #fileSelector
+            background-color: variables.$light
+        
+        #buttonSelectFile
+            background-color: variables.$light
+
+#fileSelector
+    padding: 15px
+    border-radius: 15px
+
+#audioPlayer, #videoPlayer, #fileSelector
+    display: none
+
+#buttonSelectFile
+    border-radius: 5px
+    margin: 10px
+    padding: 10px
